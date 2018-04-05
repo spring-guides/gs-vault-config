@@ -23,7 +23,7 @@ repositories {
 }
 
 ext {
-    springCloudVersion = 'Finchley.M8'
+    springCloudVersion = 'Finchley.M9'
 }
 
 sourceCompatibility = 1.8
