@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.2.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.3.RELEASE")
     }
 }
 
@@ -23,7 +23,7 @@ repositories {
 }
 
 ext {
-    springCloudVersion = 'Finchley.RC1'
+    springCloudVersion = 'Finchley.RELEASE'
 }
 
 sourceCompatibility = 1.8
