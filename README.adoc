@@ -76,7 +76,7 @@ Now you can store a configuration key-value pairs inside Vault:
     $ vault write secret/gs-vault-config example.username=demouser example.password=demopassword
     $ vault write secret/gs-vault-config/cloud example.username=clouduser example.password=cloudpassword
 
-Now you have written two entries in Vault `secret/gs-vault` and `secret/gs-vault-config/cloud`.
+Now you have written two entries in Vault `secret/gs-vault-config` and `secret/gs-vault-config/cloud`.
 
 == Define your configuration class
 
