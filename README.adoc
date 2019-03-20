@@ -1,14 +1,14 @@
 :spring_version: current
 :spring_boot_version: 2.1.3.RELEASE
-:Controller: http://docs.spring.io/spring/docs/{spring_version}/javadoc-api/org/springframework/stereotype/Controller.html
-:DispatcherServlet: http://docs.spring.io/spring/docs/{spring_version}/javadoc-api/org/springframework/web/servlet/DispatcherServlet.html
-:SpringApplication: http://docs.spring.io/spring-boot/docs/{spring_boot_version}/api/org/springframework/boot/SpringApplication.html
-:ResponseBody: http://docs.spring.io/spring/docs/{spring_version}/javadoc-api/org/springframework/web/bind/annotation/ResponseBody.html
+:Controller: https://docs.spring.io/spring/docs/{spring_version}/javadoc-api/org/springframework/stereotype/Controller.html
+:DispatcherServlet: https://docs.spring.io/spring/docs/{spring_version}/javadoc-api/org/springframework/web/servlet/DispatcherServlet.html
+:SpringApplication: https://docs.spring.io/spring-boot/docs/{spring_boot_version}/api/org/springframework/boot/SpringApplication.html
+:ResponseBody: https://docs.spring.io/spring/docs/{spring_version}/javadoc-api/org/springframework/web/bind/annotation/ResponseBody.html
 :toc:
 :icons: font
 :source-highlighter: prettify
 :project_id: gs-vault-config
-This guide walks you through the process of using http://cloud.spring.io/spring-cloud-vault/[Spring Cloud Vault] to build an application that retrieves its configuration properties from https://www.vaultproject.io[HashiCorp Vault].
+This guide walks you through the process of using https://cloud.spring.io/spring-cloud-vault/[Spring Cloud Vault] to build an application that retrieves its configuration properties from https://www.vaultproject.io[HashiCorp Vault].
 
 == What you'll build
 
