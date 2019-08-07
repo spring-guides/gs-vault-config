@@ -39,8 +39,8 @@ If you are using a Mac with homebrew, this is as simple as:
 
 Alternatively, download Vault for your operating system from https://www.vaultproject.io/downloads.html:
 
-    $ https://releases.hashicorp.com/vault/0.8.3/vault_0.8.3_darwin_amd64.zip
-    $ unzip vault_0.8.3_darwin_amd64.zip
+    $ https://releases.hashicorp.com/vault/1.2.1/vault_1.2.1_darwin_amd64.zip
+    $ unzip vault_1.2.1_darwin_amd64.zip
 
 For other systems with package management, such as Redhat, Ubuntu, Debian, CentOS, and Windows, see instructions at https://www.vaultproject.io/docs/install/index.html.
 
@@ -73,8 +73,8 @@ an authentication token.
 
 Now you can store a configuration key-value pairs inside Vault:
 
-    $ vault write secret/gs-vault-config example.username=demouser example.password=demopassword
-    $ vault write secret/gs-vault-config/cloud example.username=clouduser example.password=cloudpassword
+    $ vault kv put secret/gs-vault-config example.username=demouser example.password=demopassword
+    $ vault kv put secret/gs-vault-config/cloud example.username=clouduser example.password=cloudpassword
 
 Now you have written two entries in Vault `secret/gs-vault-config` and `secret/gs-vault-config/cloud`.
 
