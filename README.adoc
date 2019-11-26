@@ -83,7 +83,7 @@ Now you have written two entries in Vault `secret/gs-vault-config` and `secret/g
 Create a simple configuration for your Spring application:
 
 `src/main/java/hello/MyConfiguration.java`
-[source,java]
+[source,java,tabsize=2]
 ----
 include::complete/src/main/java/hello/MyConfiguration.java[]
 ----
@@ -104,7 +104,7 @@ include::complete/src/main/resources/bootstrap.properties[]
 Here you create an Application class with all the components.
 
 `src/main/java/hello/Application.java`
-[source,java]
+[source,java,tabsize=2]
 ----
 include::complete/src/main/java/hello/Application.java[]
 ----

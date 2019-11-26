@@ -11,25 +11,25 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 @EnableConfigurationProperties(MyConfiguration.class)
 public class Application implements CommandLineRunner {
 
-    private final MyConfiguration configuration;
+	private final MyConfiguration configuration;
 
-    public Application(MyConfiguration configuration) {
-        this.configuration = configuration;
-    }
+	public Application(MyConfiguration configuration) {
+		this.configuration = configuration;
+	}
 
-    public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
 
-    @Override
-    public void run(String... args) {
+	@Override
+	public void run(String... args) {
 
-        Logger logger = LoggerFactory.getLogger(Application.class);
+		Logger logger = LoggerFactory.getLogger(Application.class);
 
-        logger.info("----------------------------------------");
-        logger.info("Configuration properties");
-        logger.info("        example.username is {}", configuration.getUsername());
-        logger.info("        example.password is {}", configuration.getPassword());
-        logger.info("----------------------------------------");
-    }
+		logger.info("----------------------------------------");
+		logger.info("Configuration properties");
+		logger.info("		example.username is {}", configuration.getUsername());
+		logger.info("		example.password is {}", configuration.getPassword());
+		logger.info("----------------------------------------");
+	}
 }
