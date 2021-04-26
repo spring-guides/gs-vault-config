@@ -17,15 +17,15 @@ You'll start up Vault, store configuration properties inside Vault, build a Spri
 == What you'll need
 
 :java_version: 1.8
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/prereq_editor_jdk_buildtools.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/prereq_editor_jdk_buildtools.adoc[]
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/how_to_complete_this_guide.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/how_to_complete_this_guide.adoc[]
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/hide-show-gradle.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/hide-show-gradle.adoc[]
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/hide-show-maven.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/hide-show-maven.adoc[]
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/hide-show-sts.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/hide-show-sts.adoc[]
 
 [[initial]]
 == Install and launch HashiCorp Vault
@@ -115,8 +115,8 @@ mapping and registers a `MyConfiguration` bean.
 
 `Application` includes a `main()` method that autowires an instance of `MyConfiguration`.
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/build_an_executable_jar_mainhead.adoc[]
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/build_an_executable_jar_with_both.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/build_an_executable_jar_mainhead.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/build_an_executable_jar_with_both.adoc[]
 
 As our `Application` implements `CommandLineRunner`, the `run` method is invoked automatically when boot
 starts. You should see something like this:
@@ -147,4 +147,4 @@ Congratulations! You set up a Vault server and wrote a simple application that u
 secrets into configuration properties and encrypt data with a strong cipher — all without the headache of
 implementing key management, a cipher mode, and padding.
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/footer.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/footer.adoc[]
