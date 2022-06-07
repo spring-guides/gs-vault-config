@@ -90,13 +90,12 @@ include::complete/src/main/java/hello/MyConfiguration.java[]
 
 == Configure your application
 
-Here you configure your application with `bootstrap.properties`. Spring Cloud Vault operates in the bootstrap context to initially
-obtain configuration properties so it can provide these to the auto-configuration and your application itself.
+Here you configure your application with `application.properties`. The code below uses Spring Boot's Config Data API which allows importing configuration from Vault.
 
-`src/main/resources/bootstrap.properties`
+`src/main/resources/application.properties`
 [source,properties]
 ----
-include::complete/src/main/resources/bootstrap.properties[]
+include::complete/src/main/resources/application.properties[]
 ----
 
 == Create an Application class
