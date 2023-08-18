@@ -41,7 +41,7 @@
     </dependencyManagement>
 
     <properties>
-        <spring-cloud.version>2022.0.0-RC3</spring-cloud.version>
+        <spring-cloud.version>2022.0.4</spring-cloud.version>
     </properties>
 
     <build>
