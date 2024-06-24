@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'gs-vault-config'
-version = '0.1.0'
+version = '0.0.1-SNAPSHOT'
 
 repositories {
     mavenCentral()
@@ -15,7 +15,7 @@ repositories {
 }
 
 ext {
-    set('springCloudVersion', "2023.0.0")
+    springCloudVersion = "2023.0.2"
 }
 
 dependencies {
