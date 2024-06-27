@@ -10,7 +10,7 @@
 
 This guide walks you through the process of using https://cloud.spring.io/spring-cloud-vault/[Spring Cloud Vault] to build an application that retrieves its configuration properties from https://www.vaultproject.io[HashiCorp Vault].
 
-== What you'll build
+== What You Will Build
 
 You'll start up Vault, store configuration properties inside Vault, build a Spring application and connect it with Vault.
 
@@ -48,7 +48,7 @@ Run the HashiCorp Vault container with the `docker compose up` command.
 
 Vault is a secrets management system allowing you to store sensitive data which is encrypted at rest.
 
-You will need to access the Vault container to store the data.
+You need to access the Vault container to store the data.
 Connect to the running Docker container with the command:
 [source,shell]
 ----
@@ -66,7 +66,7 @@ export VAULT_ADDR="http://127.0.0.1:8200"
 ----
 
 Now you can store configuration key-value pairs inside Vault.
-For this guide, you will store two key-value pairs:
+For this guide, you store two key-value pairs:
 
 [source,shell]
 ----
@@ -118,7 +118,7 @@ mapping and registers a `MyConfiguration` bean.
 == Run the Application
 
 You can run the main method through your IDE.
-Alternatively, the `./gradlew bootRun` and `./mvnw spring-boot:run` commands will launch the application.
+Alternatively, the `./gradlew bootRun` and `./mvnw spring-boot:run` commands launch the application.
 
 As our `Application` implements `CommandLineRunner`, the `run` method is invoked automatically when boot starts. You should see the output:
 
@@ -131,8 +131,8 @@ Configuration properties
 ----
 
 Now start the application using the `cloud` profile.
-This can be accomplished in Gradle with the `./gradlew bootRun --args='--spring.profiles.active=cloud'` command or in Maven with the `./mvnw spring-boot:run -Dspring-boot.run.arguments="--spring.profiles.active=cloud"` command.
-When you are running the application with the cloud profile, you will see the output:
+You can do so in Gradle with the `./gradlew bootRun --args='--spring.profiles.active=cloud'` command or in Maven with the `./mvnw spring-boot:run -Dspring-boot.run.arguments="--spring.profiles.active=cloud"` command.
+When you run the application with the cloud profile, you see:
 
 ----
 ----------------------------------------

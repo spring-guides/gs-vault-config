@@ -1,10 +1,11 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.3.1'
-    id 'io.spring.dependency-management' version '1.1.5'
+    id 'org.springframework.boot' version '3.3.0'
 }
 
-group = 'org.springframework'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'gs-vault-config'
 version = '0.0.1-SNAPSHOT'
 
 java {
