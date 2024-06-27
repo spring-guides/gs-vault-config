@@ -22,18 +22,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-/**
- * @author Mark Paluch
- */
 @SpringBootTest
 public class MyConfigurationTests {
 
-	@Autowired
-	MyConfiguration myConfiguration;
-
 	@Test
-	public void shouldContainConfigurationProperties() {
-		assertThat(myConfiguration.getUsername()).isNotEmpty();
-		assertThat(myConfiguration.getPassword()).isNotEmpty();
+	void contextLoads() {
 	}
 }

@@ -1,21 +1,25 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.2.0'
-    id 'io.spring.dependency-management' version '1.1.4'
+    id 'org.springframework.boot' version '3.3.0'
 }
 
-group = 'gs-vault-config'
-version = '0.1.0'
+apply plugin: 'io.spring.dependency-management'
 
-repositories {
-    mavenCentral()
-    maven {
-        url "https://repo.spring.io/milestone/"
+group = 'gs-vault-config'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
     }
 }
 
+repositories {
+    mavenCentral()
+}
+
 ext {
-    set('springCloudVersion', "2023.0.0")
+    springCloudVersion = "2023.0.2"
 }
 
 dependencies {
