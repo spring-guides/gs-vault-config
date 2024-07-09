@@ -41,7 +41,7 @@
     </dependencyManagement>
 
     <properties>
-        <spring-cloud.version>2023.0.0</spring-cloud.version>
+        <spring-cloud.version>2023.0.2</spring-cloud.version>
     </properties>
 
     <build>
